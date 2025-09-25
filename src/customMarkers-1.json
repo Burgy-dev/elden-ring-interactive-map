@@ -1,0 +1,875 @@
+[
+  {
+    "id": "add-green_2264_5128",
+    "x": 2264,
+    "y": 5128,
+    "type": "custom-1",
+    "name": "Incantation Scarab",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/incantation_scarab_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2544_5013",
+    "x": 2544,
+    "y": 5013,
+    "type": "custom-1",
+    "name": "Pumpkin Helm",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/pumpkin_helm_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2363_4874",
+    "x": 2363,
+    "y": 4874,
+    "type": "custom-1",
+    "name": "Cloth Trousers",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cloth_trousers_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2399_4827",
+    "x": 2399,
+    "y": 4827,
+    "type": "custom-1",
+    "name": "Leather Set (No Helmet)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2354_4829",
+    "x": 2354,
+    "y": 4829,
+    "type": "custom-1",
+    "name": "Cloth Garb",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cloth_garb_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2678_5440",
+    "x": 2678,
+    "y": 5440,
+    "type": "custom-1",
+    "name": "Imp Head (Cat)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/imp_head_(cat)_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1984_5616",
+    "x": 1984,
+    "y": 5616,
+    "type": "custom-1",
+    "name": "Witch's Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/witchs_glintstone_crown_helmet_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2496_4531",
+    "x": 2496,
+    "y": 4531,
+    "type": "custom-1",
+    "name": "Twinned Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinned-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2972_4328",
+    "x": 2972,
+    "y": 4328,
+    "type": "custom-1",
+    "name": "Imp Head (Wolf)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/imp_head_(wolf)_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3226_4614",
+    "x": 3226,
+    "y": 4614,
+    "type": "custom-1",
+    "name": "Perfumer Traveler's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/traveler-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3483_4557",
+    "x": 3483,
+    "y": 4557,
+    "type": "custom-1",
+    "name": "Cerulean Tear Scarab",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/cerulean_tear_scarab_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3412_4594",
+    "x": 3412,
+    "y": 4594,
+    "type": "custom-1",
+    "name": "Marionette Solder Birdhelm",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marionette_soldier_birdhelm_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3599_4498",
+    "x": 3599,
+    "y": 4498,
+    "type": "custom-1",
+    "name": "Lusat's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lusat's_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3419_4209",
+    "x": 3419,
+    "y": 4209,
+    "type": "custom-1",
+    "name": "Godskin Apostle Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin-apostle-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2047_4546",
+    "x": 2047,
+    "y": 4546,
+    "type": "custom-1",
+    "name": "Ash of War Scarab",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ash-of-war_scarab_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2075_4506",
+    "x": 2075,
+    "y": 4506,
+    "type": "custom-1",
+    "name": "Scaled Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/scaled-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1830_4737",
+    "x": 1830,
+    "y": 4737,
+    "type": "custom-1",
+    "name": "Commoner's Simple Garb",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoners_simple_garb_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1695_4672",
+    "x": 1695,
+    "y": 4672,
+    "type": "custom-1",
+    "name": "Crimson Hood",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_hood_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1607_4390",
+    "x": 1607,
+    "y": 4390,
+    "type": "custom-1",
+    "name": "Sage Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/sage-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1709_4159",
+    "x": 1709,
+    "y": 4159,
+    "type": "custom-1",
+    "name": "Nox Mirrorhelm",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nox_mirrorhelm_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1217_3874",
+    "x": 1217,
+    "y": 3874,
+    "type": "custom-1",
+    "name": "Blackguard's Iron Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blackguards_iron_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1614_3614",
+    "x": 1614,
+    "y": 3614,
+    "type": "custom-1",
+    "name": "Mask of Confidence",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mask_of_confidence_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1754_3594",
+    "x": 1754,
+    "y": 3594,
+    "type": "custom-1",
+    "name": "Godskin Noble Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/godskin_noble_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1265_3635",
+    "x": 1265,
+    "y": 3635,
+    "type": "custom-1",
+    "name": "Diallos's Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/dialloss_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_958_3472",
+    "x": 958,
+    "y": 3472,
+    "type": "custom-1",
+    "name": "Olivinus Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/olivinus_glintstone_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_890_3448",
+    "x": 890,
+    "y": 3448,
+    "type": "custom-1",
+    "name": "Karolos Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/karolos_glintstone_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_880_3429",
+    "x": 880,
+    "y": 3429,
+    "type": "custom-1",
+    "name": "Carian Knight Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/er_carian_knight_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_841_3434",
+    "x": 841,
+    "y": 3434,
+    "type": "custom-1",
+    "name": "Twinsage Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/twinsage_glintstone_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_814_3470",
+    "x": 814,
+    "y": 3470,
+    "type": "custom-1",
+    "name": "Lazuli Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lazuli_glintstone_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1321_2817",
+    "x": 1321,
+    "y": 2817,
+    "type": "custom-1",
+    "name": "Finger Maiden Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/finger-maiden-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1086_2646",
+    "x": 1086,
+    "y": 2646,
+    "type": "custom-1",
+    "name": "Juvenile Scholar Robe",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile_scholar_robe_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1064_2643",
+    "x": 1064,
+    "y": 2643,
+    "type": "custom-1",
+    "name": "Juvenile Scholar Cap",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/juvenile_scholar_cap_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_809_2674",
+    "x": 809,
+    "y": 2674,
+    "type": "custom-1",
+    "name": "Black Wolf Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_wolf_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_771_2675",
+    "x": 771,
+    "y": 2675,
+    "type": "custom-1",
+    "name": "Preceptor's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/preceptor-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_703_2558",
+    "x": 703,
+    "y": 2558,
+    "type": "custom-1",
+    "name": "Bladd's Set (No Helmet)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/blaidd'sset.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_821_2460",
+    "x": 821,
+    "y": 2460,
+    "type": "custom-1",
+    "name": "Snow Witch Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/snowwitch-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1260_2514",
+    "x": 1260,
+    "y": 2514,
+    "type": "custom-1",
+    "name": "Bull-Goat Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bullgate-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1260_2474",
+    "x": 1260,
+    "y": 2474,
+    "type": "custom-1",
+    "name": "Ruler's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ruler-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1102_2334",
+    "x": 1102,
+    "y": 2334,
+    "type": "custom-1",
+    "name": "Omenkiller Set (No Helm)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omenkiller-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1287_2257",
+    "x": 1287,
+    "y": 2257,
+    "type": "custom-1",
+    "name": "Black Hood",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_hood_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1290_2232",
+    "x": 1290,
+    "y": 2232,
+    "type": "custom-1",
+    "name": "Skeletal Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/skeletal_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1286_2211",
+    "x": 1286,
+    "y": 2211,
+    "type": "custom-1",
+    "name": "Raptor's Black Feathers",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/raptors_black_feathers_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1265_2199",
+    "x": 1265,
+    "y": 2199,
+    "type": "custom-1",
+    "name": "Hierodas Glintstone Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hierodas_glintstone_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1258_2173",
+    "x": 1258,
+    "y": 2173,
+    "type": "custom-1",
+    "name": "Errant Sorcerer Set (No Helm)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/errant_sorcerer_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1283_2096",
+    "x": 1283,
+    "y": 2096,
+    "type": "custom-1",
+    "name": "Azur's Glintstone Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/azurs_full_set_2.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1298_2060",
+    "x": 1298,
+    "y": 2060,
+    "type": "custom-1",
+    "name": "Bloodhound Knight Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodhound-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1296_2036",
+    "x": 1296,
+    "y": 2036,
+    "type": "custom-1",
+    "name": "Gelmir Knight Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/gelmir-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1230_1990",
+    "x": 1230,
+    "y": 1990,
+    "type": "custom-1",
+    "name": "Mushroom Set (No Crown)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/mushroom-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1178_2066",
+    "x": 1178,
+    "y": 2066,
+    "type": "custom-1",
+    "name": "Eye Surcoat",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/eye_surcoat_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1183_2048",
+    "x": 1183,
+    "y": 2048,
+    "type": "custom-1",
+    "name": "Consort's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/consort's_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1131_2071",
+    "x": 1131,
+    "y": 2071,
+    "type": "custom-1",
+    "name": "Commoner's Headband",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/commoners_headband_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1152_2123",
+    "x": 1152,
+    "y": 2123,
+    "type": "custom-1",
+    "name": "Crimson Tear Scarab",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crimson_tear_scarab_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_993_2137",
+    "x": 993,
+    "y": 2137,
+    "type": "custom-1",
+    "name": "Albinauric Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/albinauric_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_936_2139",
+    "x": 936,
+    "y": 2139,
+    "type": "custom-1",
+    "name": "Jar",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/jar_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_908_1994",
+    "x": 908,
+    "y": 1994,
+    "type": "custom-1",
+    "name": "Fire Prelate Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fire_prelate_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1451_1868",
+    "x": 1451,
+    "y": 1868,
+    "type": "custom-1",
+    "name": "Marais Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1469_1883",
+    "x": 1469,
+    "y": 1883,
+    "type": "custom-1",
+    "name": "Marais Robe",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/marais_robe_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1838_1955",
+    "x": 1838,
+    "y": 1955,
+    "type": "custom-1",
+    "name": "Radiant Gold Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/radiant_gold_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1839_1775",
+    "x": 1839,
+    "y": 1775,
+    "type": "custom-1",
+    "name": "Battlemage Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/battlemage_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_1870_1709",
+    "x": 1870,
+    "y": 1709,
+    "type": "custom-1",
+    "name": "Noble's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/noble-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2490_2543",
+    "x": 2490,
+    "y": 2543,
+    "type": "custom-1",
+    "name": "Alberich's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/alberich-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2509_2531",
+    "x": 2509,
+    "y": 2531,
+    "type": "custom-1",
+    "name": "Raging Wolf Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloody-wolf-armor-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2523_2512",
+    "x": 2523,
+    "y": 2512,
+    "type": "custom-1",
+    "name": "Lionel's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/lionel-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2502_2513",
+    "x": 2502,
+    "y": 2513,
+    "type": "custom-1",
+    "name": "Deathbed Dress",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/deathbed_dress_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2521_2485",
+    "x": 2521,
+    "y": 2485,
+    "type": "custom-1",
+    "name": "Omensmirk Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omensmirk_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2545_2412",
+    "x": 2545,
+    "y": 2412,
+    "type": "custom-1",
+    "name": "Omen Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/omen_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2579_2418",
+    "x": 2579,
+    "y": 2418,
+    "type": "custom-1",
+    "name": "Guilty Hood",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/guilty_hood_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2602_2466",
+    "x": 2602,
+    "y": 2466,
+    "type": "custom-1",
+    "name": "Bloodsoaked Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2616_2450",
+    "x": 2616,
+    "y": 2450,
+    "type": "custom-1",
+    "name": "Bloodsoaked Manchettes",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/bloodsoaked_manchettes_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2620_2411",
+    "x": 2620,
+    "y": 2411,
+    "type": "custom-1",
+    "name": "Leather-Draped Tabard",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/leather-draped_tabard_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2670_2460",
+    "x": 2670,
+    "y": 2460,
+    "type": "custom-1",
+    "name": "Imp Head (Corpse)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/imp_head_(corpse)_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2674_2512",
+    "x": 2674,
+    "y": 2512,
+    "type": "custom-1",
+    "name": "Upper-Class Robe",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/upper-class_robe_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2767_2413",
+    "x": 2767,
+    "y": 2413,
+    "type": "custom-1",
+    "name": "Nomadic Merchant's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/nomadic_merchant's_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2751_2314",
+    "x": 2751,
+    "y": 2314,
+    "type": "custom-1",
+    "name": "Crucible Axe Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/crucible_knight_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_2776_2306",
+    "x": 2776,
+    "y": 2306,
+    "type": "custom-1",
+    "name": "Tree Sentinel Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/tree_sentinel_set_pose.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3000_2494",
+    "x": 3000,
+    "y": 2494,
+    "type": "custom-1",
+    "name": "Official's Attire",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/officials_attire_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3412_2023",
+    "x": 3412,
+    "y": 2023,
+    "type": "custom-1",
+    "name": "Ronin's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/ronin's_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3501_2034",
+    "x": 3501,
+    "y": 2034,
+    "type": "custom-1",
+    "name": "Zamor Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/zamor-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3763_2095",
+    "x": 3763,
+    "y": 2095,
+    "type": "custom-1",
+    "name": "Okina Mask",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/okina_mask_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3537_1785",
+    "x": 3537,
+    "y": 1785,
+    "type": "custom-1",
+    "name": "Rotten Gravekeeper Cloak",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_gravekeeper_cloak_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3547_1757",
+    "x": 3547,
+    "y": 1757,
+    "type": "custom-1",
+    "name": "Imp Head (Elder)",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/imp_head_(elder)_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3270_1893",
+    "x": 3270,
+    "y": 1893,
+    "type": "custom-1",
+    "name": "Rotten Duelist Helm",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_duelist_helm_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3240_1729",
+    "x": 3240,
+    "y": 1729,
+    "type": "custom-1",
+    "name": "Night's Cavalry Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/night's_cavalry_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3058_1613",
+    "x": 3058,
+    "y": 1613,
+    "type": "custom-1",
+    "name": "Sanguine Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/sanguine_noble_armor_set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3164_1351",
+    "x": 3164,
+    "y": 1351,
+    "type": "custom-1",
+    "name": "Rotten Duelist Greaves",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/rotten_duelist_greaves_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3278_1361",
+    "x": 3278,
+    "y": 1361,
+    "type": "custom-1",
+    "name": "Black Knife Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/black_knife_armor_set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3573_1480",
+    "x": 3573,
+    "y": 1480,
+    "type": "custom-1",
+    "name": "Traveling Maiden Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/travelling_maiden_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3625_1499",
+    "x": 3625,
+    "y": 1499,
+    "type": "custom-1",
+    "name": "Hoslow's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/hoslow-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3646_1502",
+    "x": 3646,
+    "y": 1502,
+    "type": "custom-1",
+    "name": "Greathood",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/greathood_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_4058_1627",
+    "x": 4058,
+    "y": 1627,
+    "type": "custom-1",
+    "name": "Fingerprint Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/fingerprint_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_4095_1462",
+    "x": 4095,
+    "y": 1462,
+    "type": "custom-1",
+    "name": "White Reed Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/white_reed_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3510_987",
+    "x": 3510,
+    "y": 987,
+    "type": "custom-1",
+    "name": "Envoy Crown",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/envoy_crown_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3532_609",
+    "x": 3532,
+    "y": 609,
+    "type": "custom-1",
+    "name": "Traveler's Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/melinas_set.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_3457_579",
+    "x": 3457,
+    "y": 579,
+    "type": "custom-1",
+    "name": "Haligtree Knight Helm",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/haligtree_knight_helm_elden_ring_wiki_guide_200px.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_5507_3100",
+    "x": 5507,
+    "y": 3100,
+    "type": "custom-1",
+    "name": "Malformed Dragon Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/malformed-dragon-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_5506_3016",
+    "x": 5506,
+    "y": 3016,
+    "type": "custom-1",
+    "name": "Beast Champion Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/beast-champion-set-elden-ring-wiki-guide.png",
+    "completed": false
+  },
+  {
+    "id": "add-green_5510_2948",
+    "x": 5510,
+    "y": 2948,
+    "type": "custom-1",
+    "name": "Drake Knight Set",
+    "image": "https://eldenring.wiki.fextralife.com/file/Elden-Ring/drake_knight_set.png",
+    "completed": false
+  }
+]
