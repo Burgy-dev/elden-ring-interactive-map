@@ -256,10 +256,11 @@ function App() {
     setActiveMarker(marker);
 
     if (wrapperRef.current && imgSize) {
-      const scale = 1.5;
-      const x = window.innerWidth / 2 - marker.x * scale;
-      const y = window.innerHeight / 2 - marker.y * scale;
-      wrapperRef.current.setTransform(x, y, scale, 400, "easeOut");
+      const newScale = 1.5;
+      const x = window.innerWidth / 2 - marker.x * newScale;
+      const y = window.innerHeight / 2 - marker.y * newScale;
+      wrapperRef.current.setTransform(x, y, newScale, 400, "easeOut");
+      setCurrentScale(newScale);
     }
   };
 
@@ -399,11 +400,14 @@ function App() {
         ref={wrapperRef}
         minScale={
           imgSize
-            ? Math.min(
+          ? Math.max(
+            0.5,
+            Math.min(
                 window.innerWidth / imgSize.w,
                 window.innerHeight / imgSize.h
               )
-            : 1
+            )
+          : 1
         }
         maxScale={4}
         limitToBounds={false}
