@@ -1,7 +1,8 @@
+import React from "react";
 import swordIcon from "../assets/sword.png";
 import armorIcon from "../assets/armor.png";
 
-export function Marker({
+function MarkerComponent({
   marker: m,
   activeMarker,
   handleMarkerClick,
@@ -134,3 +135,5 @@ export function Marker({
     </div>
   );
 }
+
+export const Marker = React.memo(MarkerComponent);
