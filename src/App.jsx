@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
-import mapImage from "./assets/map.png";
+import mapImage from "./assets/map.webp";
 import initialMarkers from "./markers.json";
 import initialCustomMarkers from "./customMarkers.json";
 import initialCustomMarkers1 from "./customMarkers-1.json";
