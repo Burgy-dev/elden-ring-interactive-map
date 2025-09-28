@@ -7,6 +7,7 @@ export function Toolbar({
   hideCompleted,
   setHideCompleted,
   resetNavigation,
+  resetMarkers,
   searchTerm,
   suggestions,
   handleSearchChange,
@@ -42,6 +43,21 @@ export function Toolbar({
         }}
       >
         Reset Navigation
+      </button>
+
+      {/* Reset Markers */}
+      <button
+        onClick={resetMarkers}
+        style={{
+          background: "red",
+          color: "white",
+          padding: "6px 12px",
+          border: "none",
+          borderRadius: "4px",
+          cursor: "pointer",
+        }}
+      >
+        Reset Markers
       </button>
 
       {/* Filters */}

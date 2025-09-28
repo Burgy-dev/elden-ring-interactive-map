@@ -12,24 +12,65 @@ import { NavigationPath } from "./components/NavigationPath.jsx";
 import { useGraph } from "./hooks/useGraph";
 import { clampPosition } from "./utils/clampPosition";
 
+const STORAGE_KEY = "eldenRingMapProgress";
+
 function App() {
   const [imgSize, setImgSize] = useState(null);
   const [currentScale, setCurrentScale] = useState(1);
   const [fitScale, setFitScale] = useState(1);
 
   // Markers
-  const [markers, setMarkers] = useState(
-    initialMarkers.map((m) => ({ ...m, type: "grace", completed: m.completed ?? false }))
-  );
-  const [customMarkers, setCustomMarkers] = useState(
-    initialCustomMarkers.map((m) => ({ ...m, type: "custom", completed: m.completed ?? false }))
-  );
-  const [customMarkers1, setCustomMarkers1] = useState(
-    initialCustomMarkers1.map((m) => ({ ...m, type: "custom-1", completed: m.completed ?? false }))
-  );
+  const [markers, setMarkers] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (data.markers) return data.markers;
+      } catch (err) {
+        console.error("[Storage] Failed to parse markers:", err);
+      }
+    }
+    return initialMarkers.map((m) => ({ ...m, type: "grace", completed: m.completed ?? false }));
+  });
+
+  const [customMarkers, setCustomMarkers] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (data.customMarkers) return data.customMarkers;
+      } catch {}
+    }
+    return initialCustomMarkers.map((m) => ({ ...m, type: "custom", completed: m.completed ?? false }));
+  });
+
+  const [customMarkers1, setCustomMarkers1] = useState(() => {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      try {
+        const data = JSON.parse(saved);
+        if (data.customMarkers1) return data.customMarkers1;
+      } catch {}
+    }
+    return initialCustomMarkers1.map((m) => ({ ...m, type: "custom-1", completed: m.completed ?? false }));
+  });
 
   const [activeMarker, setActiveMarker] = useState(null);
   const [hideCompleted, setHideCompleted] = useState(false);
+
+  // Save data whenever markers change
+  useEffect(() => {
+    const data = {
+      markers,
+      customMarkers,
+      customMarkers1,
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (err) {
+      console.error("[Storage] Failed to save data:", err);
+    }
+  }, [markers, customMarkers, customMarkers1]);
 
   // Navigation
   const [startMarker, setStartMarker] = useState(null);
@@ -121,6 +162,14 @@ function App() {
     setActiveMarker(null);
   };
 
+  // Add reset markers
+  const resetMarkers = () => {
+    localStorage.removeItem(STORAGE_KEY);
+    setMarkers(initialMarkers.map((m) => ({ ...m, type: "grace", completed: m.completed ?? false })));
+    setCustomMarkers(initialCustomMarkers.map((m) => ({ ...m, type: "custom", completed: m.completed ?? false })));
+    setCustomMarkers1(initialCustomMarkers1.map((m) => ({ ...m, type: "custom-1", completed: m.completed ?? false })));
+  };
+
   // Search
   const allMarkers = [...markers, ...customMarkers, ...customMarkers1];
 
@@ -157,6 +206,7 @@ function App() {
         hideCompleted={hideCompleted}
         setHideCompleted={setHideCompleted}
         resetNavigation={() => { setStartMarker(null); setEndMarker(null); setRoute([]); }}
+        resetMarkers={resetMarkers}
         searchTerm={searchTerm}
         suggestions={suggestions}
         handleSearchChange={handleSearchChange}
