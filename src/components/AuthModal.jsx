@@ -11,6 +11,7 @@ export function AuthModal({ mode, onClose, switchMode }) {
 
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const [showRenderNotice, setShowRenderNotice] = useState(false);
 
   const validate = () => {
     const newErrors = {};
@@ -31,8 +32,13 @@ export function AuthModal({ mode, onClose, switchMode }) {
     e.preventDefault();
     if (!validate()) return;
 
+    setLoading(true);
+    setShowRenderNotice(false);
+
+    // Show Render spin-up notice after 10s if still loading
+    const timer = setTimeout(() => setShowRenderNotice(true), 10000);
+
     try {
-      setLoading(true);
       if (mode === "login") {
         await login(username, password);
       } else {
@@ -48,7 +54,7 @@ export function AuthModal({ mode, onClose, switchMode }) {
 
         if (mode === "login") {
           if (status === 401 || data?.error?.includes("not found")) {
-            newErrors.username = "Account not found";
+            newErrors.password = "Account not found or incorrect password"
           } else {
             newErrors.global = "Login failed. Please try again.";
           }
@@ -65,7 +71,9 @@ export function AuthModal({ mode, onClose, switchMode }) {
 
       setErrors(newErrors);
     } finally {
+      clearTimeout(timer);
       setLoading(false);
+      setShowRenderNotice(false);
     }
   };
 
@@ -200,6 +208,21 @@ export function AuthModal({ mode, onClose, switchMode }) {
           >
             {loading ? <DotLoader /> : mode === "login" ? "Log In" : "Sign Up"}
           </button>
+
+          {/* Render spin-up notice */}
+          {showRenderNotice && (
+            <div
+              style={{
+                textAlign: "center",
+                fontSize: "0.8rem",
+                color: "#aaa",
+                marginTop: "6px",
+                lineHeight: "1.2",
+              }}
+            >
+              Please be patient — the backend may take up to a minute to wake up.
+            </div>
+          )}
         </form>
 
         <div
