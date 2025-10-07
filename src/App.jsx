@@ -12,65 +12,63 @@ import { NavigationPath } from "./components/NavigationPath.jsx";
 import { useGraph } from "./hooks/useGraph";
 import { clampPosition } from "./utils/clampPosition";
 
-const STORAGE_KEY = "eldenRingMapProgress";
+import { useAuth } from "./AuthContext.jsx";
+import { api } from "./api";
+import { AuthToolbar } from "./components/AuthToolbar.jsx";
 
 function App() {
+  const { user } = useAuth();
   const [imgSize, setImgSize] = useState(null);
   const [currentScale, setCurrentScale] = useState(1);
   const [fitScale, setFitScale] = useState(1);
 
   // Markers
   const [markers, setMarkers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try {
-        const data = JSON.parse(saved);
-        if (data.markers) return data.markers;
-      } catch (err) {
-        console.error("[Storage] Failed to parse markers:", err);
-      }
-    }
     return initialMarkers.map((m) => ({ ...m, type: "grace", completed: m.completed ?? false }));
   });
 
   const [customMarkers, setCustomMarkers] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try {
-        const data = JSON.parse(saved);
-        if (data.customMarkers) return data.customMarkers;
-      } catch {}
-    }
     return initialCustomMarkers.map((m) => ({ ...m, type: "custom", completed: m.completed ?? false }));
   });
 
   const [customMarkers1, setCustomMarkers1] = useState(() => {
-    const saved = localStorage.getItem(STORAGE_KEY);
-    if (saved) {
-      try {
-        const data = JSON.parse(saved);
-        if (data.customMarkers1) return data.customMarkers1;
-      } catch {}
-    }
     return initialCustomMarkers1.map((m) => ({ ...m, type: "custom-1", completed: m.completed ?? false }));
   });
 
   const [activeMarker, setActiveMarker] = useState(null);
   const [hideCompleted, setHideCompleted] = useState(false);
 
-  // Save data whenever markers change
+  // load progress if the user is logged in
   useEffect(() => {
-    const data = {
-      markers,
-      customMarkers,
-      customMarkers1,
-    };
-    try {
-      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
-    } catch (err) {
-      console.error("[Storage] Failed to save data:", err);
+    if (user) {
+      api.get("/progress").then((res) => {
+        const { grace = [], custom = [], custom1 = [] } = res.data;
+
+        setMarkers((prev) =>
+          prev.map((m) => ({ ...m, completed: grace.includes(m.id) }))
+        );
+
+        setCustomMarkers((prev) =>
+          prev.map((m) => ({ ...m, completed: custom.includes(m.id) }))
+        );
+
+        setCustomMarkers1((prev) =>
+          prev.map((m) => ({ ...m, completed: custom1.includes(m.id) }))
+        );
+      });
     }
-  }, [markers, customMarkers, customMarkers1]);
+  }, [user]);
+
+  // If no user, reset markers
+  useEffect(() => {
+    if (!user) {
+      // Reset all markers to incomplete locally when the user logs out
+      setMarkers((prev) => prev.map((m) => ({ ...m, completed: false })));
+      setCustomMarkers((prev) => prev.map((m) => ({ ...m, completed: false })));
+      setCustomMarkers1((prev) => prev.map((m) => ({ ...m, completed: false })));
+    }
+  }, [user]);
+
 
   // Navigation
   const [startMarker, setStartMarker] = useState(null);
@@ -155,19 +153,40 @@ function App() {
     const update = (list, setList) =>
       setList((prev) => prev.map((m) => (m.id === id ? { ...m, completed: !m.completed } : m)));
 
-    if (type === "grace") update(markers, setMarkers);
-    else if (type === "custom") update(customMarkers, setCustomMarkers);
-    else if (type === "custom-1") update(customMarkers1, setCustomMarkers1);
+    if (user) {
+      // Normalize custom-1 to custom1 before sending
+      const normalizedType = type === "custom-1" ? "custom1" : type;
+      api.patch("/progress/toggle", { id, type: normalizedType })
+        .then(res => {
+          // Update local state optimistically
+          if (type === "grace") update(markers, setMarkers);
+          else if (type === "custom") update(customMarkers, setCustomMarkers);
+          else if (type === "custom-1") update(customMarkers1, setCustomMarkers1);
+        })
+        .catch(console.error);
+    } else {
+      // Fallback to localStorage for logged-out users
+      if (type === "grace") update(markers, setMarkers);
+      else if (type === "custom") update(customMarkers, setCustomMarkers);
+      else if (type === "custom-1") update(customMarkers1, setCustomMarkers1);
+    }
 
     setActiveMarker(null);
   };
 
+
   // Add reset markers
   const resetMarkers = () => {
-    localStorage.removeItem(STORAGE_KEY);
-    setMarkers(initialMarkers.map((m) => ({ ...m, type: "grace", completed: m.completed ?? false })));
-    setCustomMarkers(initialCustomMarkers.map((m) => ({ ...m, type: "custom", completed: m.completed ?? false })));
-    setCustomMarkers1(initialCustomMarkers1.map((m) => ({ ...m, type: "custom-1", completed: m.completed ?? false })));
+    if (user) {
+      // If logged in, clear progress on the backend
+      api.put("/progress/bulk", { grace: [], custom: [], custom1: [] })
+        .then(() => {
+          setMarkers((prev) => prev.map((m) => ({ ...m, completed: false })));
+          setCustomMarkers((prev) => prev.map((m) => ({ ...m, completed: false })));
+          setCustomMarkers1((prev) => prev.map((m) => ({ ...m, completed: false })));
+        })
+        .catch(console.error);
+    }
   };
 
   // Search
@@ -199,7 +218,7 @@ function App() {
   };
 
   return (
-    <div style={{ width: "100vw", height: "100vh", backgroundColor: "black" }}>
+    <div style={{ width: "100vw", height: "100vh", overflow: "hidden", backgroundColor: "black" }}>
       <Toolbar
         filters={filters}
         toggleFilter={(f) => setFilters((prev) => ({ ...prev, [f]: !prev[f] }))}
@@ -212,6 +231,8 @@ function App() {
         handleSearchChange={handleSearchChange}
         handleSelectSuggestion={handleSelectSuggestion}
       />
+
+      <AuthToolbar />
 
       <TransformWrapper
         ref={wrapperRef}
