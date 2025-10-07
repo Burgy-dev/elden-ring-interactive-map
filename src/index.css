@@ -31,7 +31,7 @@ html, body {
 }
 
 body {
-  display: block; /* Remove flex centering */
+  display: block;
   min-width: unset;
   min-height: unset;
 }
